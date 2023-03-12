@@ -21,5 +21,5 @@ pip install django-cors-headers
 
 ### Compiles and hot-reloads for development
 ```
-python manage.py runserver 8081 (change it if you need)
+python manage.py runserver 8001 (please do not change this port)
 ```
