@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'cookies.apps.CookiesConfig',
     'oauthcode.apps.OauthcodeConfig',
     "example_api.apps.ExampleApiConfig",
     "django.contrib.admin",
