@@ -18,6 +18,8 @@ from django.urls import include, path
 
 urlpatterns = [
     path('example_api/', include('example_api.urls')),
+    path('oauthcode/', include('oauthcode.urls')),
+    path('cookies/', include('cookies.urls')),
     path('dashboard/', include('dashboard.urls')),
     path("admin/", admin.site.urls),
 ]
