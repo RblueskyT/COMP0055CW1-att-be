@@ -11,7 +11,7 @@ def get_github_url(request):
 
     print("inside get_github_url")
     if Cookie.objects.all().count() > 0:
-        cookie = Cookie.objects.all().reverse()[0].cookie_text
+        cookie = Cookie.objects.last().cookie_text
         print("cookie", cookie)
         headers = {
 
