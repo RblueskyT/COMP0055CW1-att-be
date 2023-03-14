@@ -12,7 +12,7 @@ import requests
 def get_code(request):
     print("code before try")
     if Ocode.objects.all().count() > 0:
-        code = Ocode.objects.all().reverse()[0].oauth_code
+        code = Ocode.objects.last().oauth_code
         print(code)
         # return JsonResponse({"code": code})
         return HttpResponse(code)
